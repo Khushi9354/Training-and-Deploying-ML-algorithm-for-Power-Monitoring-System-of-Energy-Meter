@@ -9,10 +9,6 @@ Data Loading:
 The dataset is loaded from a CSV file containing measurements from energy meters, including voltage, current, power, and class labels.
 from pandas import read_csv
 
-url = "Energy Meter.csv"
-names = ['Voltage', 'Current', 'Power', 'Class']
-dataset = read_csv(url, names=names)
-
 Data Preprocessing:
 
 The features (Voltage, Current, Power) and target variable (Class) are extracted.
@@ -49,5 +45,3 @@ Class: The classification label indicating the operational state of the energy m
 Conclusion
 This project successfully demonstrates how to apply logistic regression for classifying energy meter data. With a high accuracy rate, the model can be useful for applications in energy management and monitoring. Future work could include experimenting with other classification algorithms, hyperparameter tuning, and exploring additional datasets for improved performance.
 
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
