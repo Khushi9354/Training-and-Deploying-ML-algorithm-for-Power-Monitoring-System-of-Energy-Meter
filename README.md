@@ -7,6 +7,12 @@ Key Steps Involved:
 Data Loading:
 
 The dataset is loaded from a CSV file containing measurements from energy meters, including voltage, current, power, and class labels.
+from pandas import read_csv
+
+url = "Energy Meter.csv"
+names = ['Voltage', 'Current', 'Power', 'Class']
+dataset = read_csv(url, names=names)
+
 Data Preprocessing:
 
 The features (Voltage, Current, Power) and target variable (Class) are extracted.
